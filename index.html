@@ -1,399 +1,1288 @@
 
-<!-- SPECIAL PERSON SECTION -->
-<section class="love-section" id="special">
-  <div class="love-bg-glow"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05070d">
+<title>VAMSHI — A World Beyond Imagination</title>
 
-  <div class="love-heading reveal">
-    <div class="eyebrow">A SPECIAL CHAPTER · 07 YEARS</div>
-    <h2 class="love-title">
-      My favourite<br>
-      <span>person.</span>
-    </h2>
-    <p class="love-intro">
-      Some people don't just become a part of your life.
-      They become a part of your heart, your dreams
-      and every tomorrow you imagine.
-    </p>
-  </div>
-
-  <div class="love-universe reveal">
-    <div class="love-orbit orbit-a"></div>
-    <div class="love-orbit orbit-b"></div>
-    <div class="love-orbit orbit-c"></div>
-
-    <div class="love-heart-main">
-      <span>♥</span>
-    </div>
-
-    <div class="floating-heart heart-one">♥</div>
-    <div class="floating-heart heart-two">♡</div>
-    <div class="floating-heart heart-three">♥</div>
-    <div class="floating-heart heart-four">♡</div>
-    <div class="floating-heart heart-five">♥</div>
-
-    <div class="love-name">
-      నా పిచ్చిదానా
-      <span>♡</span>
-    </div>
-    <div class="love-caption">
-      SEVEN YEARS · ONE TRUST · A THOUSAND DREAMS
-    </div>
-  </div>
-
-  <div class="love-story reveal">
-    <div class="eyebrow">A story written with trust</div>
-    <h3>
-      Seven years.<br>
-      Countless memories.<br>
-      <span>One beautiful bond.</span>
-    </h3>
-
-    <p>
-      Seven years of knowing each other, understanding each other
-      and choosing to stay with trust. What makes you special to me
-      is not just your love, but the way you care for me.
-    </p>
-
-    <p>
-      The little things you do, the efforts you make and the way
-      you understand me mean more than I can ever explain.
-      Your care makes me feel supported, understood and valued.
-      I truly believe that finding someone who loves and cares
-      the way you do is something rare.
-    </p>
-
-    <p>
-      I don't dream of a perfect life. I dream of a life with you.
-      I want us to grow together, face every chapter together
-      and stay beside each other for a lifetime.
-    </p>
-  </div>
-
-  <div class="dream-grid">
-    <article class="dream-card reveal">
-      <div class="dream-icon">🏍️</div>
-      <div class="dream-number">OUR DREAM · 01</div>
-      <h4>Endless Bike Rides</h4>
-      <p>
-        I want to travel to countless beautiful places with you.
-        Long roads, peaceful journeys, new destinations
-        and memories that we will talk about forever.
-      </p>
-    </article>
-
-    <article class="dream-card reveal">
-      <div class="dream-icon">🛕</div>
-      <div class="dream-number">OUR DREAM · 02</div>
-      <h4>Temple Visits Together</h4>
-      <p>
-        I wish to visit many temples with you, share peaceful moments
-        and pray for a beautiful future filled with happiness,
-        strength and togetherness.
-      </p>
-    </article>
-
-    <article class="dream-card reveal">
-      <div class="dream-icon">∞</div>
-      <div class="dream-number">OUR DREAM · 03</div>
-      <h4>A Lifetime Together</h4>
-      <p>
-        My biggest dream is simple: to keep choosing each other,
-        support each other's dreams and build a beautiful life
-        together, one day at a time.
-      </p>
-    </article>
-  </div>
-
-  <div class="love-ending reveal">
-    <div class="ending-heart">♥</div>
-    <h3>
-      Not just seven years.<br>
-      <span>A lifetime is my dream.</span>
-    </h3>
-    <p>
-      To the girl who makes ordinary moments special,
-      thank you for your love, trust, care and every effort.
-    </p>
-    <div class="ending-name">నా పిచ్చిదానా ♡</div>
-    <div class="ending-small">YOU ARE A BEAUTIFUL PART OF MY STORY.</div>
-  </div>
-</section>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+:root{
+ --bg:#05070d;
+ --white:#f4f3ef;
+ --muted:#a3a7b5;
+ --cyan:#8cecff;
+ --violet:#a58bff;
+ --pink:#ff91c8;
+ --line:rgba(255,255,255,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ background:var(--bg);
+ color:var(--white);
+ font-family:'DM Sans',sans-serif;
+ overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+#universe{
+ position:fixed;inset:0;width:100%;height:100%;
+ z-index:0;pointer-events:none;
+}
+.ambient{
+ position:fixed;inset:0;z-index:1;pointer-events:none;
+ background:radial-gradient(ellipse at center,transparent 15%,rgba(5,7,13,.25) 65%,#05070d 100%);
+}
+.noise{
+ position:fixed;inset:0;z-index:30;pointer-events:none;
+ opacity:.035;
+ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+}
+.progress{
+ position:fixed;top:0;left:0;width:0;height:2px;z-index:120;
+ background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink));
+}
+main,footer{position:relative;z-index:2}
+nav{
+ position:fixed;top:0;left:0;width:100%;z-index:50;
+ padding:24px 6%;display:flex;align-items:center;
+ justify-content:space-between;transition:.4s;
+}
+nav.scrolled{
+ padding:15px 6%;background:rgba(5,7,13,.78);
+ backdrop-filter:blur(20px);border-bottom:1px solid var(--line);
+}
+.logo{
+ font-family:'Space Grotesk';font-weight:700;
+ letter-spacing:3px;font-size:17px;
+}
+.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{
+ font-size:10px;letter-spacing:1.5px;
+ text-transform:uppercase;color:#c5c7d0;transition:.3s;
+}
+.nav-links a:hover{color:var(--cyan)}
+.menu-btn{
+ display:none;background:none;border:1px solid var(--line);
+ color:white;padding:10px 13px;border-radius:30px;
+}
+section{position:relative;padding:120px 9%;overflow:hidden}
+.eyebrow{
+ font-size:10px;letter-spacing:4px;text-transform:uppercase;
+ color:var(--cyan);margin-bottom:24px;
+}
+.section-title{
+ font-family:'Space Grotesk';
+ font-size:clamp(42px,7vw,90px);
+ font-weight:400;line-height:.98;letter-spacing:-4px;
+}
+.section-title em{
+ font-style:normal;color:transparent;
+ -webkit-text-stroke:1px rgba(255,255,255,.65);
+}
+.section-copy{
+ color:var(--muted);line-height:1.9;
+ font-size:14px;max-width:560px;
+}
+.btn{
+ padding:15px 23px;border-radius:50px;
+ border:1px solid rgba(255,255,255,.3);
+ font-size:10px;letter-spacing:2px;
+ text-transform:uppercase;transition:.35s;
+ display:inline-flex;align-items:center;gap:12px;
+}
+.btn.primary{background:white;color:#090b13;border-color:white}
+.btn:hover{transform:translateY(-5px);box-shadow:0 12px 45px rgba(140,236,255,.15)}
+.hero{
+ min-height:100svh;display:flex;align-items:center;
+ justify-content:center;text-align:center;
+ padding:140px 7% 90px;
+}
+.hero-content{position:relative;z-index:3;max-width:1100px}
+.hero-kicker{
+ display:inline-flex;align-items:center;gap:12px;
+ border:1px solid var(--line);border-radius:50px;
+ padding:10px 17px;color:#c7c9d2;font-size:10px;
+ letter-spacing:3px;text-transform:uppercase;
+ background:rgba(255,255,255,.025);
+ animation:rise 1s .2s both;
+}
+.live-dot{
+ width:6px;height:6px;border-radius:50%;
+ background:#8cecff;box-shadow:0 0 14px #8cecff;
+}
+.hero h1{
+ font-family:'Space Grotesk';
+ font-size:clamp(75px,17vw,210px);
+ font-weight:600;line-height:.88;
+ letter-spacing:-.09em;margin:35px 0 25px;
+ background:linear-gradient(130deg,#fff 15%,#b5c7e7 45%,#a68dff 75%,#8cecff);
+ background-size:200% auto;
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+ animation:shine 7s linear infinite,rise 1.2s .4s both;
+}
+.hero-sub{
+ color:#c0c3d0;font-size:clamp(13px,2vw,17px);
+ letter-spacing:5px;text-transform:uppercase;
+}
+.hero-desc{
+ color:var(--muted);font-size:13px;line-height:1.9;
+ max-width:480px;margin:25px auto 32px;
+}
+.hero-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.scroll-cue{
+ position:absolute;bottom:35px;left:50%;
+ transform:translateX(-50%);color:#9297a8;
+ font-size:9px;letter-spacing:3px;text-transform:uppercase;
+}
+.scroll-cue span{
+ display:block;width:1px;height:38px;margin:12px auto 0;
+ background:linear-gradient(white,transparent);
+ animation:scrollline 1.8s infinite;
+}
+.about{
+ min-height:90vh;display:grid;grid-template-columns:1fr 1fr;
+ gap:9%;align-items:center;
+}
+.about-visual{
+ min-height:540px;position:relative;
+ display:flex;justify-content:center;align-items:center;
+}
+.photo-orbit{
+ width:min(350px,80vw);aspect-ratio:4/5;
+ position:relative;transform-style:preserve-3d;
+}
+.photo-orbit:before{
+ content:"";position:absolute;inset:-25px;
+ border:1px solid rgba(140,236,255,.28);
+ border-radius:48% 52% 45% 55%;
+ animation:orbit 18s linear infinite;
+}
+.photo-orbit:after{
+ content:"";position:absolute;inset:-45px;
+ border:1px solid rgba(165,139,255,.2);
+ border-radius:50%;animation:orbit 25s linear infinite reverse;
+}
+.photo-orbit img{
+ width:100%;height:100%;object-fit:cover;
+ border-radius:8px;position:relative;z-index:1;
+ filter:saturate(.8) contrast(1.05);
+ box-shadow:0 30px 100px rgba(0,0,0,.6);
+}
+.photo-caption{
+ position:absolute;bottom:-35px;right:-25px;z-index:3;
+ background:rgba(10,14,25,.8);backdrop-filter:blur(15px);
+ border:1px solid var(--line);padding:15px 20px;
+ font-size:9px;letter-spacing:2px;color:var(--cyan);
+}
+.about-text .section-copy{margin-top:30px}
+.about-meta{display:flex;gap:40px;margin-top:38px;flex-wrap:wrap}
+.meta-item strong{
+ display:block;font-family:'Space Grotesk';
+ font-size:24px;font-weight:400;margin-bottom:6px;
+}
+.meta-item small{
+ font-size:9px;color:var(--muted);
+ letter-spacing:2px;text-transform:uppercase;
+}
+.statement{
+ min-height:65vh;display:flex;align-items:center;
+ justify-content:center;text-align:center;
+ background:radial-gradient(ellipse at center,rgba(119,103,255,.12),transparent 65%);
+}
+.statement-inner{max-width:1000px}
+.statement h2{
+ font-family:'Space Grotesk';font-weight:300;
+ font-size:clamp(35px,7vw,82px);
+ line-height:1.2;letter-spacing:-3px;
+}
+.statement h2 span{color:var(--cyan)}
+.statement p{
+ color:var(--muted);font-size:12px;
+ letter-spacing:2px;margin-top:35px;text-transform:uppercase;
+}
+.interest-grid{
+ display:grid;grid-template-columns:repeat(4,1fr);
+ gap:12px;margin-top:65px;
+}
+.interest-card{
+ min-height:290px;padding:28px 22px;
+ border:1px solid var(--line);border-radius:5px;
+ background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.008));
+ position:relative;overflow:hidden;transition:.5s;
+}
+.interest-card:hover{
+ border-color:rgba(140,236,255,.5);
+ transform:translateY(-7px);
+}
+.card-number{font-size:10px;color:var(--cyan);letter-spacing:2px}
+.card-symbol{
+ font-size:40px;margin:42px 0 25px;
+ display:block;filter:drop-shadow(0 0 20px rgba(140,236,255,.3));
+}
+.interest-card h3{
+ font-family:'Space Grotesk';font-size:21px;
+ font-weight:500;margin-bottom:10px;
+}
+.interest-card p{font-size:11px;color:var(--muted);line-height:1.8}
+.card-glow{
+ position:absolute;width:170px;height:170px;border-radius:50%;
+ background:rgba(140,236,255,.09);filter:blur(45px);
+ right:-80px;bottom:-90px;
+}
+.detail-section{
+ background:linear-gradient(180deg,transparent,rgba(140,236,255,.025),transparent);
+}
+.detail-head{max-width:750px;margin-bottom:55px}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.detail-card{
+ position:relative;min-height:300px;padding:35px;
+ border:1px solid var(--line);
+ background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));
+ overflow:hidden;border-radius:8px;transition:.4s;
+}
+.detail-card:hover{transform:translateY(-8px);border-color:rgba(140,236,255,.45)}
+.big-icon{font-size:42px;display:block;margin-bottom:28px}
+.detail-card h3{
+ font:500 clamp(25px,3vw,36px) 'Space Grotesk';
+ margin-bottom:15px;
+}
+.detail-card p{font-size:13px;line-height:1.95;color:var(--muted)}
+.detail-tag{
+ display:inline-block;margin-top:22px;color:var(--cyan);
+ font-size:9px;letter-spacing:2px;text-transform:uppercase;
+}
+/* SPECIAL LOVE SECTION */
 .love-section{
-  position:relative;
-  z-index:2;
-  padding:140px 8%;
-  overflow:hidden;
-  background:
-    radial-gradient(ellipse at 50% 35%,
-      rgba(255,93,157,.09),transparent 55%);
+ background:radial-gradient(ellipse at 50% 35%,rgba(255,93,157,.09),transparent 58%);
 }
-.love-bg-glow{
-  position:absolute;
-  width:500px;height:500px;
-  border-radius:50%;
-  background:rgba(255,76,151,.08);
-  filter:blur(110px);
-  left:50%;top:15%;
-  transform:translateX(-50%);
-  pointer-events:none;
-}
-.love-heading{
-  position:relative;
-  text-align:center;
-  max-width:750px;
-  margin:0 auto;
-}
+.love-heading{text-align:center;max-width:760px;margin:0 auto}
 .love-title{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(55px,9vw,110px);
-  line-height:.95;
-  letter-spacing:-5px;
-  font-weight:400;
+ font:400 clamp(55px,9vw,105px)/.95 'Space Grotesk';
+ letter-spacing:-5px;
 }
-.love-title span{
-  color:transparent;
-  -webkit-text-stroke:1px #ff9bc9;
-}
+.love-title span{color:transparent;-webkit-text-stroke:1px #ff9bc9}
 .love-intro{
-  color:#aeb0bd;
-  max-width:490px;
-  margin:25px auto 0;
-  font-size:13px;
-  line-height:1.9;
+ color:var(--muted);max-width:550px;margin:25px auto 0;
+ font-size:13px;line-height:1.9;
 }
 .love-universe{
-  position:relative;
-  width:min(520px,90vw);
-  height:520px;
-  margin:40px auto 50px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  isolation:isolate;
+ position:relative;width:min(520px,90vw);height:480px;
+ margin:25px auto 35px;display:flex;
+ align-items:center;justify-content:center;
 }
 .love-heart-main{
-  position:relative;
-  width:160px;height:160px;
-  display:grid;place-items:center;
-  transform:rotate(-45deg);
-  background:linear-gradient(145deg,#ffb5d7,#ff4f9a 55%,#a52a78);
-  border-radius:18px;
-  box-shadow:
-    0 0 40px rgba(255,86,158,.5),
-    0 0 100px rgba(255,86,158,.24),
-    inset 0 0 25px rgba(255,255,255,.4);
-  animation:heartBeat 2.5s ease-in-out infinite;
+ position:relative;width:125px;height:125px;
+ transform:rotate(-45deg);
+ background:linear-gradient(145deg,#ffc5e0,#ff4f9a 55%,#a52a78);
+ border-radius:16px;
+ box-shadow:0 0 40px rgba(255,86,158,.5),0 0 100px rgba(255,86,158,.24);
+ animation:heartBeat 2.5s ease-in-out infinite;
 }
-.love-heart-main::before,
-.love-heart-main::after{
-  content:"";
-  position:absolute;
-  width:160px;height:160px;
-  background:inherit;
-  border-radius:50%;
+.love-heart-main:before,.love-heart-main:after{
+ content:"";position:absolute;width:125px;height:125px;
+ background:inherit;border-radius:50%;
 }
-.love-heart-main::before{top:-80px;left:0}
-.love-heart-main::after{left:80px;top:0}
+.love-heart-main:before{top:-62px;left:0}
+.love-heart-main:after{left:62px;top:0}
 .love-heart-main span{
-  position:relative;
-  z-index:2;
-  color:rgba(255,255,255,.35);
-  font-size:80px;
-  transform:rotate(45deg);
-  text-shadow:0 0 30px white;
+ position:absolute;z-index:2;color:rgba(255,255,255,.5);
+ font-size:65px;transform:rotate(45deg);top:25px;left:32px;
 }
 .love-orbit{
-  position:absolute;
-  border:1px solid rgba(255,145,200,.25);
-  border-radius:50%;
-  pointer-events:none;
+ position:absolute;border:1px solid rgba(255,145,200,.25);
+ border-radius:50%;pointer-events:none;
 }
-.orbit-a{
-  width:270px;height:270px;
-  animation:loveSpin 12s linear infinite;
-}
-.orbit-b{
-  width:370px;height:370px;
-  transform:rotateX(65deg);
-  animation:loveSpin 18s linear infinite reverse;
-}
-.orbit-c{
-  width:460px;height:460px;
-  transform:rotateY(65deg);
-  border-color:rgba(165,139,255,.22);
-  animation:loveSpin 25s linear infinite;
-}
+.orbit-a{width:235px;height:235px;animation:spin 12s linear infinite}
+.orbit-b{width:340px;height:340px;transform:rotateX(65deg);animation:spin 18s linear infinite reverse}
+.orbit-c{width:440px;height:440px;transform:rotateY(65deg);border-color:rgba(165,139,255,.22);animation:spin 25s linear infinite}
 .floating-heart{
-  position:absolute;
-  color:#ff8fc2;
-  text-shadow:0 0 20px rgba(255,91,164,.8);
-  animation:heartFloat 4s ease-in-out infinite;
+ position:absolute;color:#ff8fc2;
+ text-shadow:0 0 20px rgba(255,91,164,.8);
+ animation:heartFloat 4s ease-in-out infinite;
 }
-.heart-one{top:15%;left:22%;font-size:28px}
-.heart-two{top:24%;right:17%;font-size:34px;animation-delay:-1s}
-.heart-three{bottom:23%;left:15%;font-size:22px;animation-delay:-2s}
-.heart-four{bottom:16%;right:20%;font-size:32px;animation-delay:-1.5s}
-.heart-five{top:48%;right:5%;font-size:18px;animation-delay:-.5s}
+.heart-one{top:13%;left:20%;font-size:28px}
+.heart-two{top:22%;right:17%;font-size:34px;animation-delay:-1s}
+.heart-three{bottom:20%;left:15%;font-size:22px;animation-delay:-2s}
+.heart-four{bottom:15%;right:20%;font-size:32px;animation-delay:-1.5s}
+.heart-five{top:48%;right:5%;font-size:18px}
 .love-name{
-  position:absolute;
-  bottom:18px;
-  font-family:'Noto Sans Telugu','DM Sans',sans-serif;
-  font-size:clamp(22px,5vw,36px);
-  font-weight:600;
-  color:#ffd5e8;
-  text-shadow:0 0 22px rgba(255,100,169,.8);
-  letter-spacing:1px;
-  animation:nameGlow 3s ease-in-out infinite;
+ position:absolute;bottom:5px;
+ font-family:'Noto Sans Telugu',sans-serif;
+ font-size:clamp(24px,5vw,36px);font-weight:700;
+ color:#ffd5e8;text-shadow:0 0 22px rgba(255,100,169,.8);
+ animation:nameGlow 3s ease-in-out infinite;
 }
 .love-name span{color:#ff6eae}
 .love-caption{
-  position:absolute;
-  bottom:-12px;
-  font-size:8px;
-  letter-spacing:3px;
-  color:#9a9bab;
+ position:absolute;bottom:-20px;font-size:8px;
+ letter-spacing:3px;color:#9a9bab;text-align:center;
 }
-.love-story{
-  max-width:750px;
-  margin:80px auto;
-  text-align:center;
-}
+.love-story{max-width:790px;margin:50px auto 65px;text-align:center}
 .love-story h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(35px,6vw,65px);
-  line-height:1.12;
-  font-weight:400;
-  letter-spacing:-2px;
-  margin:25px 0;
+ font:400 clamp(35px,6vw,62px)/1.12 'Space Grotesk';
+ letter-spacing:-2px;margin:20px 0 25px;
 }
 .love-story h3 span{color:#ff9bc9}
 .love-story p{
-  color:#b0b2c0;
-  font-size:13px;
-  line-height:2;
-  margin:17px auto;
-  max-width:680px;
+ color:#b0b2c0;font-size:13px;line-height:2;
+ margin:17px auto;max-width:720px;
 }
 .dream-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  margin:80px auto;
-  max-width:1100px;
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:15px;max-width:1100px;margin:65px auto;
 }
 .dream-card{
-  padding:32px 25px;
-  min-height:300px;
-  border:1px solid rgba(255,145,200,.18);
-  background:linear-gradient(145deg,
-    rgba(255,145,200,.07),
-    rgba(255,255,255,.015));
-  border-radius:8px;
-  transition:transform .4s,border-color .4s;
+ padding:30px 24px;min-height:280px;
+ border:1px solid rgba(255,145,200,.18);
+ background:linear-gradient(145deg,rgba(255,145,200,.07),rgba(255,255,255,.015));
+ border-radius:8px;transition:.4s;
 }
-.dream-card:hover{
-  transform:translateY(-10px);
-  border-color:rgba(255,145,200,.6);
-}
-.dream-icon{
-  font-size:36px;
-  margin-bottom:27px;
-  filter:drop-shadow(0 0 15px rgba(255,145,200,.35));
-}
-.dream-number{
-  color:#ff9bc9;
-  font-size:9px;
-  letter-spacing:2px;
-  margin-bottom:15px;
-}
-.dream-card h4{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:21px;
-  font-weight:500;
-  margin-bottom:13px;
-}
-.dream-card p{
-  font-size:12px;
-  line-height:1.9;
-  color:#aeb0bd;
-}
+.dream-card:hover{transform:translateY(-9px);border-color:rgba(255,145,200,.6)}
+.dream-icon{font-size:34px;margin-bottom:25px}
+.dream-number{color:#ff9bc9;font-size:9px;letter-spacing:2px;margin-bottom:14px}
+.dream-card h4{font:500 21px 'Space Grotesk';margin-bottom:12px}
+.dream-card p{font-size:12px;line-height:1.9;color:var(--muted)}
 .love-ending{
-  max-width:750px;
-  text-align:center;
-  margin:100px auto 20px;
-  padding:65px 25px;
-  border-top:1px solid rgba(255,145,200,.2);
-  border-bottom:1px solid rgba(255,145,200,.2);
-  background:radial-gradient(ellipse at center,
-    rgba(255,100,160,.08),transparent 70%);
+ text-align:center;max-width:760px;margin:75px auto 10px;
+ padding:55px 25px;
+ border-top:1px solid rgba(255,145,200,.2);
+ border-bottom:1px solid rgba(255,145,200,.2);
+ background:radial-gradient(ellipse at center,rgba(255,100,160,.08),transparent 70%);
 }
-.ending-heart{
-  font-size:42px;
-  color:#ff7db6;
-  text-shadow:0 0 30px #ff4e9b;
-  animation:heartBeat 2s infinite;
-}
-.love-ending h3{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(30px,5vw,55px);
-  line-height:1.2;
-  font-weight:400;
-  margin:25px 0;
-}
+.ending-heart{font-size:40px;color:#ff7db6;text-shadow:0 0 30px #ff4e9b;animation:heartBeat 2s infinite}
+.love-ending h3{font:400 clamp(30px,5vw,54px)/1.2 'Space Grotesk';margin:22px 0}
 .love-ending h3 span{color:#ff9bc9}
-.love-ending p{
-  color:#aeb0bd;
-  font-size:13px;
-  line-height:1.9;
-  max-width:500px;
-  margin:auto;
-}
+.love-ending p{color:var(--muted);font-size:13px;line-height:1.9;max-width:550px;margin:auto}
 .ending-name{
-  font-family:'Noto Sans Telugu','DM Sans',sans-serif;
-  color:#ffd5e8;
-  font-size:27px;
-  margin:30px 0 15px;
-  text-shadow:0 0 20px rgba(255,100,169,.5);
+ font:700 27px 'Noto Sans Telugu';color:#ffd5e8;
+ margin:27px 0 12px;text-shadow:0 0 20px rgba(255,100,169,.5);
 }
-.ending-small{
-  color:#9295a6;
-  font-size:9px;
-  letter-spacing:3px;
+.ending-small{color:#9295a6;font-size:9px;letter-spacing:3px}
+/* PROJECTS */
+.project-section{
+ background:radial-gradient(ellipse at 50% 50%,rgba(140,236,255,.07),transparent 65%);
 }
-@keyframes heartBeat{
-  0%,100%{transform:rotate(-45deg) scale(1)}
-  50%{transform:rotate(-45deg) scale(1.09)}
+.project-showcase{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:45px;align-items:center;margin-top:55px;
 }
-@keyframes loveSpin{
-  from{rotate:0deg}
-  to{rotate:360deg}
+.project-visual{
+ min-height:390px;position:relative;display:grid;
+ place-items:center;border:1px solid rgba(140,236,255,.18);
+ background:linear-gradient(145deg,rgba(140,236,255,.06),rgba(165,139,255,.04));
+ border-radius:12px;overflow:hidden;perspective:900px;
 }
-@keyframes heartFloat{
-  0%,100%{transform:translateY(0) scale(1)}
-  50%{transform:translateY(-20px) scale(1.15)}
+.project-window{
+ width:75%;height:245px;border:1px solid rgba(255,255,255,.3);
+ border-radius:9px;background:rgba(7,12,23,.9);
+ box-shadow:0 25px 80px rgba(0,0,0,.5),0 0 50px rgba(140,236,255,.1);
+ transform:rotateY(-12deg) rotateX(7deg);
+ animation:floatWindow 5s ease-in-out infinite;
 }
-@keyframes nameGlow{
-  0%,100%{text-shadow:0 0 15px rgba(255,100,169,.5)}
-  50%{text-shadow:0 0 30px rgba(255,100,169,1)}
+.window-bar{
+ height:30px;border-bottom:1px solid var(--line);
+ display:flex;align-items:center;gap:6px;padding:0 12px;
 }
-@media(max-width:800px){
-  .dream-grid{grid-template-columns:1fr}
-  .love-universe{height:430px}
-  .orbit-c{width:390px;height:390px}
-  .orbit-b{width:320px;height:320px}
+.window-bar i{width:7px;height:7px;border-radius:50%;background:#ff8d9b}
+.window-bar i:nth-child(2){background:#ffd58d}
+.window-bar i:nth-child(3){background:#8cecff}
+.window-content{padding:25px 18px}
+.window-line{
+ height:7px;border-radius:8px;
+ background:linear-gradient(90deg,rgba(140,236,255,.8),rgba(165,139,255,.35));
+ margin:12px 0;width:80%;
 }
-@media(max-width:500px){
-  .love-section{padding:95px 6%}
-  .love-universe{height:360px}
-  .love-heart-main{transform:rotate(-45deg) scale(.72)}
-  .love-orbit.orbit-a{width:210px;height:210px}
-  .orbit-b{width:280px;height:280px}
-  .orbit-c{width:340px;height:340px}
-  .love-name{font-size:23px}
-  .love-caption{font-size:6px;letter-spacing:2px}
-  .love-story{margin:50px auto}
-  .dream-grid{margin:50px auto}
+.window-line.short{width:45%}
+.window-blocks{display:flex;gap:10px;margin-top:24px}
+.window-blocks span{
+ height:65px;flex:1;border:1px solid rgba(140,236,255,.2);
+ border-radius:5px;background:rgba(140,236,255,.06);
+}
+.project-copy h3{
+ font:500 clamp(32px,4vw,52px) 'Space Grotesk';
+ margin-bottom:18px;
+}
+.project-copy p{font-size:13px;line-height:2;color:var(--muted);margin-bottom:15px}
+.project-status{
+ display:inline-flex;align-items:center;gap:10px;
+ margin-top:12px;padding:11px 16px;
+ border:1px solid rgba(140,236,255,.25);
+ border-radius:30px;color:var(--cyan);
+ font-size:9px;letter-spacing:2px;text-transform:uppercase;
+}
+.status-dot{
+ width:7px;height:7px;border-radius:50%;
+ background:#8cecff;box-shadow:0 0 12px #8cecff;
+ animation:pulse 1.5s infinite;
+}
+.project-points{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:12px;margin-top:35px;
+}
+.project-point{
+ padding:20px;border:1px solid var(--line);
+ background:rgba(255,255,255,.025);border-radius:6px;
+}
+.project-point strong{
+ display:block;font:500 17px 'Space Grotesk';margin-bottom:8px;
+}
+.project-point span{font-size:10px;color:var(--muted);line-height:1.7}
+/* LITTLE PAGE */
+.little{
+ min-height:65vh;display:flex;align-items:center;
+ justify-content:center;text-align:center;
+ background:radial-gradient(ellipse at center,rgba(140,236,255,.09),transparent 65%);
+}
+.little h2{
+ font:400 clamp(45px,9vw,105px) 'Space Grotesk';
+ letter-spacing:-5px;
+}
+.little h2 span{color:var(--cyan)}
+.little p{color:var(--muted);font-size:11px;letter-spacing:3px;margin-top:20px}
+.little-description{
+ max-width:580px;margin:25px auto 0;
+ color:var(--muted);font-size:13px;line-height:1.9;
+}
+/* FUTURE + GALLERY */
+.future{
+ text-align:center;padding-top:150px;padding-bottom:150px;
+ background:radial-gradient(ellipse at center,rgba(119,103,255,.08),transparent 65%);
+}
+.future .section-copy{margin:30px auto}
+.future-word{
+ font:400 clamp(55px,13vw,160px)/1 'Space Grotesk';
+ letter-spacing:-.08em;color:transparent;
+ -webkit-text-stroke:1px rgba(255,255,255,.55);
+ margin:45px 0;
+}
+.gallery{padding-top:100px;padding-bottom:140px}
+.gallery-head{
+ display:flex;justify-content:space-between;
+ align-items:end;gap:30px;margin-bottom:55px;
+}
+.gallery-grid{
+ display:grid;grid-template-columns:1.15fr .85fr;
+ gap:18px;align-items:start;
+}
+.gallery-item{
+ position:relative;overflow:hidden;border-radius:5px;
+ border:1px solid var(--line);background:#0c101b;
+}
+.gallery-item:nth-child(2){margin-top:100px}
+.gallery-item:nth-child(3){margin-top:-60px}
+.gallery-item img{
+ width:100%;height:100%;min-height:350px;
+ max-height:650px;object-fit:cover;display:block;
+ transition:transform 1s,filter 1s;filter:saturate(.78);
+}
+.gallery-item:hover img{transform:scale(1.06);filter:saturate(1.05)}
+.gallery-item:after{
+ content:"";position:absolute;inset:0;
+ background:linear-gradient(0deg,rgba(3,5,10,.7),transparent 50%);
+ pointer-events:none;
+}
+.gallery-label{
+ position:absolute;bottom:22px;left:22px;z-index:2;
+ font-size:10px;letter-spacing:3px;text-transform:uppercase;
+}
+footer{
+ padding:65px 9% 35px;border-top:1px solid var(--line);
+ background:rgba(3,5,10,.55);
+}
+.footer-top{
+ display:flex;justify-content:space-between;
+ align-items:center;gap:30px;flex-wrap:wrap;
+}
+.footer-title{
+ font:clamp(30px,5vw,55px) 'Space Grotesk';
+ letter-spacing:-2px;
+}
+.footer-title span{color:var(--cyan)}
+.social-link{
+ display:inline-block;border:1px solid var(--line);
+ padding:13px 19px;border-radius:50px;
+ font-size:10px;letter-spacing:2px;transition:.3s;
+}
+.social-link:hover{border-color:var(--cyan);color:var(--cyan)}
+.footer-bottom{
+ display:flex;justify-content:space-between;gap:20px;
+ border-top:1px solid var(--line);margin-top:60px;
+ padding-top:25px;color:#777d8e;font-size:9px;
+ letter-spacing:2px;text-transform:uppercase;
+}
+.reveal{
+ opacity:0;transform:translateY(45px);
+ transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left,.reveal-right{opacity:0;transition:1s}
+.reveal-left{transform:translateX(-50px)}
+.reveal-right{transform:translateX(50px)}
+.reveal-left.visible,.reveal-right.visible{opacity:1;transform:translateX(0)}
+@keyframes rise{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shine{to{background-position:200% center}}
+@keyframes orbit{to{transform:rotate(382deg)}}
+@keyframes scrollline{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(.2);transform-origin:bottom}}
+@keyframes heartBeat{0%,100%{transform:rotate(-45deg) scale(1)}50%{transform:rotate(-45deg) scale(1.09)}}
+@keyframes spin{to{rotate:360deg}}
+@keyframes heartFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-20px) scale(1.15)}}
+@keyframes nameGlow{0%,100%{text-shadow:0 0 15px rgba(255,100,169,.5)}50%{text-shadow:0 0 30px rgba(255,100,169,1)}}
+@keyframes floatWindow{0%,100%{transform:rotateY(-12deg) rotateX(7deg) translateY(0)}50%{transform:rotateY(-7deg) rotateX(4deg) translateY(-12px)}}
+@keyframes pulse{50%{opacity:.35;transform:scale(.8)}}
+
+@media(max-width:900px){
+ section{padding:100px 7%}
+ .about,.project-showcase{grid-template-columns:1fr;gap:55px}
+ .about-visual{min-height:470px;order:2}
+ .about-text{order:1}
+ .interest-grid{grid-template-columns:repeat(2,1fr)}
+ .detail-grid{grid-template-columns:1fr}
+ .dream-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ nav{padding:20px 6%}
+ .menu-btn{display:block}
+ .nav-links{
+  display:none;position:absolute;top:70px;left:5%;width:90%;
+  padding:25px;background:rgba(8,11,20,.95);
+  border:1px solid var(--line);border-radius:12px;
+  flex-direction:column;align-items:flex-start;gap:22px;
+  backdrop-filter:blur(20px);
+ }
+ .nav-links.open{display:flex}
+ .hero{min-height:95svh;padding-top:130px}
+ .hero h1{font-size:clamp(65px,20vw,110px)}
+ .hero-sub{letter-spacing:3px;font-size:10px}
+ section{padding:85px 7%}
+ .section-title{letter-spacing:-2px}
+ .about-visual{min-height:390px}
+ .photo-orbit{width:72vw}
+ .interest-grid{grid-template-columns:1fr 1fr;gap:9px}
+ .interest-card{min-height:240px;padding:20px 15px}
+ .card-symbol{font-size:30px;margin:30px 0 20px}
+ .interest-card h3{font-size:17px}
+ .interest-card p{font-size:10px}
+ .love-universe{height:360px}
+ .orbit-a{width:190px;height:190px}
+ .orbit-b{width:260px;height:260px}
+ .orbit-c{width:335px;height:335px}
+ .love-name{font-size:23px}
+ .love-caption{font-size:6px;letter-spacing:2px}
+ .dream-grid{grid-template-columns:1fr;margin:45px auto}
+ .project-visual{min-height:300px}
+ .project-points{grid-template-columns:1fr}
+ .gallery-head{display:block}
+ .gallery-grid{grid-template-columns:1fr;gap:15px}
+ .gallery-item:nth-child(2),.gallery-item:nth-child(3){margin:0}
+ .gallery-item img{min-height:300px}
+ .little h2{letter-spacing:-3px}
+ .footer-bottom{flex-direction:column}
+ .footer-title{font-size:35px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{
+  animation-duration:.01ms!important;
+  transition-duration:.01ms!important;
+  scroll-behavior:auto!important;
+ }
 }
 </style>
+</head>
+
+<body>
+<div class="progress" id="progress"></div>
+<canvas id="universe"></canvas>
+<div class="ambient"></div>
+<div class="noise"></div>
+
+<nav id="navbar">
+ <a href="#home" class="logo">VAMSHI<span>.</span></a>
+ <button class="menu-btn" id="menuBtn">MENU +</button>
+ <div class="nav-links" id="navLinks">
+  <a href="#about">About</a>
+  <a href="#interests">Interests</a>
+  <a href="#passions">Gaming & Riding</a>
+  <a href="#special">Special</a>
+  <a href="#projects">Projects</a>
+  <a href="#gallery">Gallery</a>
+ </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+ <div class="hero-content">
+  <div class="hero-kicker"><span class="live-dot"></span> Welcome to my world</div>
+  <h1>VAMSHI</h1>
+  <div class="hero-sub">MY WORLD. MY STORY. MY UNIVERSE.</div>
+  <p class="hero-desc">
+   Not just a portfolio. A little universe built from dreams,
+   curiosity, creativity and everything that makes me who I am.
+  </p>
+  <div class="hero-actions">
+   <a class="btn primary" href="#about">Explore my world ↗</a>
+   <a class="btn" href="#gallery">Discover moments ✦</a>
+  </div>
+ </div>
+ <div class="scroll-cue">Scroll to enter <span></span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+ <div class="about-visual reveal-left">
+  <div class="photo-orbit">
+   <img src="images/vamshi-1.jpg" alt="Vamshi portrait">
+   <div class="photo-caption">THE PERSON BEHIND THE WORLD</div>
+  </div>
+ </div>
+ <div class="about-text reveal-right">
+  <div class="eyebrow">01 / The beginning</div>
+  <h2 class="section-title">Beyond the<br><em>ordinary.</em></h2>
+  <p class="section-copy">
+   I'm Vamshi. I believe life is more than just following a path.
+   It's about creating your own direction, exploring new things,
+   learning through every experience and turning imagination into reality.
+   <br><br>
+   I enjoy BGMI gaming, bike riding, photography and technology.
+   I'm also learning website development and exploring how ideas can
+   become real digital experiences.
+   <br><br>
+   This website is a reflection of my interests, dreams, memories
+   and the person I'm becoming.
+  </p>
+  <div class="about-meta">
+   <div class="meta-item"><strong>01</strong><small>One life</small></div>
+   <div class="meta-item"><strong>∞</strong><small>Dreams</small></div>
+   <div class="meta-item"><strong>NOW</strong><small>The journey</small></div>
+  </div>
+ </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement">
+ <div class="statement-inner reveal">
+  <div class="eyebrow">A thought to remember</div>
+  <h2>"The world is full of possibilities.
+   <span>Why live inside the ordinary?</span>"</h2>
+  <p>Dream without limits. Create with purpose.</p>
+ </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests">
+ <div class="reveal">
+  <div class="eyebrow">02 / What moves me</div>
+  <h2 class="section-title">Different worlds.<br><em>One soul.</em></h2>
+  <p class="section-copy" style="margin-top:25px">
+   Every passion adds a new dimension to my life.
+   These are a few things that keep my curiosity alive.
+  </p>
+ </div>
+
+ <div class="interest-grid">
+  <article class="interest-card reveal">
+   <span class="card-number">01 / DIGITAL</span>
+   <span class="card-symbol">⌘</span>
+   <h3>Technology</h3>
+   <p>Exploring websites, digital creativity and the possibilities of code.</p>
+   <div class="card-glow"></div>
+  </article>
+
+  <article class="interest-card reveal">
+   <span class="card-number">02 / ADVENTURE</span>
+   <span class="card-symbol">✧</span>
+   <h3>Riding</h3>
+   <p>Open roads, new places and the feeling of discovering something different.</p>
+   <div class="card-glow"></div>
+  </article>
+
+  <article class="interest-card reveal">
+   <span class="card-number">03 / CREATIVE</span>
+   <span class="card-symbol">◉</span>
+   <h3>Photography</h3>
+   <p>Finding stories in ordinary moments and keeping memories alive through frames.</p>
+   <div class="card-glow"></div>
+  </article>
+
+  <article class="interest-card reveal">
+   <span class="card-number">04 / PLAY</span>
+   <span class="card-symbol">✦</span>
+   <h3>Gaming</h3>
+   <p>Strategy, focus, teamwork and the excitement of every new challenge.</p>
+   <div class="card-glow"></div>
+  </article>
+ </div>
+</section>
+
+<!-- GAMING AND RIDING DETAILS -->
+<section class="detail-section" id="passions">
+ <div class="detail-head reveal">
+  <div class="eyebrow">03 / Beyond the screen, beyond the road</div>
+  <h2 class="section-title">My kind of<br><em>adventure.</em></h2>
+  <p class="section-copy" style="margin-top:25px">
+   Two different worlds, both full of energy, focus and unforgettable moments.
+  </p>
+ </div>
+
+ <div class="detail-grid">
+  <article class="detail-card reveal">
+   <span class="big-icon">🎮</span>
+   <div class="eyebrow">THE GAMING WORLD</div>
+   <h3>BGMI — Focus. Strategy. Teamwork.</h3>
+   <p>
+    BGMI is more than a game I enjoy. I love the strategy, quick decisions,
+    teamwork and excitement that every match brings.
+    From improving my skills to learning from every match,
+    gaming gives me a space to challenge myself and enjoy the moment.
+    <br><br>
+    For me, every match is a new experience.
+    Good teamwork, smart decisions and continuous improvement
+    make the game interesting.
+   </p>
+   <span class="detail-tag">PLAYER MINDSET · ALWAYS LEARNING</span>
+   <div class="card-glow"></div>
+  </article>
+
+  <article class="detail-card reveal">
+   <span class="big-icon">🏍️</span>
+   <div class="eyebrow">THE RIDER WITHIN</div>
+   <h3>Open roads. New memories.</h3>
+   <p>
+    Bike riding is one of the ways I love exploring the world.
+    The roads, changing views and feeling of reaching somewhere new
+    make every ride memorable.
+    <br><br>
+    My dream is to travel to many beautiful places,
+    explore different destinations and collect memories along the way.
+    For me, the journey itself is just as special as the destination.
+   </p>
+   <span class="detail-tag">RIDE · EXPLORE · REMEMBER</span>
+   <div class="card-glow"></div>
+  </article>
+ </div>
+</section>
+
+<!-- MY SPECIAL PERSON -->
+<section class="love-section" id="special">
+ <div class="love-heading reveal">
+  <div class="eyebrow">04 / A special chapter · 07 years</div>
+  <h2 class="love-title">My favourite<br><span>person.</span></h2>
+  <p class="love-intro">
+   Some people don't just become a part of your life.
+   They become a part of your heart, your dreams
+   and every tomorrow you imagine.
+  </p>
+ </div>
+
+ <div class="love-universe reveal">
+  <div class="love-orbit orbit-a"></div>
+  <div class="love-orbit orbit-b"></div>
+  <div class="love-orbit orbit-c"></div>
+
+  <div class="love-heart-main"><span>♥</span></div>
+
+  <div class="floating-heart heart-one">♥</div>
+  <div class="floating-heart heart-two">♡</div>
+  <div class="floating-heart heart-three">♥</div>
+  <div class="floating-heart heart-four">♡</div>
+  <div class="floating-heart heart-five">♥</div>
+
+  <div class="love-name">నా పిచ్చిదానా <span>♡</span></div>
+  <div class="love-caption">SEVEN YEARS · ONE TRUST · A THOUSAND DREAMS</div>
+ </div>
+
+ <div class="love-story reveal">
+  <div class="eyebrow">A story written with trust</div>
+  <h3>Seven years.<br>Countless memories.<br><span>One beautiful bond.</span></h3>
+
+  <p>
+   Seven years of knowing each other, understanding each other
+   and choosing to stay with trust. What makes you special to me
+   is not just your love, but the way you care for me.
+  </p>
+
+  <p>
+   The little things you do, the efforts you make and the way you
+   understand me mean more than I can ever explain.
+   Your care makes me feel supported, understood and valued.
+   I truly believe that finding someone who loves and cares
+   the way you do is rare.
+  </p>
+
+  <p>
+   I want us to keep trusting each other, supporting each other's
+   dreams and standing together through every chapter.
+   I don't dream of a perfect life.
+   I dream of a life where we both keep choosing each other.
+  </p>
+ </div>
+
+ <div class="dream-grid">
+  <article class="dream-card reveal">
+   <div class="dream-icon">🏍️</div>
+   <div class="dream-number">OUR DREAM · 01</div>
+   <h4>Endless Bike Rides</h4>
+   <p>
+    I want to travel to countless beautiful places with you.
+    Long roads, peaceful journeys, new destinations and memories
+    that we will talk about forever.
+   </p>
+  </article>
+
+  <article class="dream-card reveal">
+   <div class="dream-icon">🛕</div>
+   <div class="dream-number">OUR DREAM · 02</div>
+   <h4>Temple Visits Together</h4>
+   <p>
+    I wish to visit many temples with you, share peaceful moments
+    and pray for a beautiful future filled with happiness,
+    strength and togetherness.
+   </p>
+  </article>
+
+  <article class="dream-card reveal">
+   <div class="dream-icon">∞</div>
+   <div class="dream-number">OUR DREAM · 03</div>
+   <h4>A Lifetime Together</h4>
+   <p>
+    My biggest dream is simple: to keep choosing each other,
+    grow together, support each other's goals and build
+    a beautiful life side by side.
+   </p>
+  </article>
+ </div>
+
+ <div class="love-ending reveal">
+  <div class="ending-heart">♥</div>
+  <h3>Not just seven years.<br><span>A lifetime is my dream.</span></h3>
+  <p>
+   To the girl who makes ordinary moments special,
+   thank you for your love, trust, care and every effort.
+  </p>
+  <div class="ending-name">నా పిచ్చిదానా ♡</div>
+  <div class="ending-small">YOU ARE A BEAUTIFUL PART OF MY STORY.</div>
+ </div>
+</section>
+
+<!-- WEB DEVELOPMENT AND PROJECTS -->
+<section class="project-section" id="projects">
+ <div class="detail-head reveal">
+  <div class="eyebrow">05 / Building what I imagine</div>
+  <h2 class="section-title">From ideas<br><em>to reality.</em></h2>
+  <p class="section-copy" style="margin-top:25px">
+   I'm interested in website development because it lets me turn
+   ideas into experiences people can explore.
+   I'm learning, experimenting and improving one project at a time.
+  </p>
+ </div>
+
+ <div class="project-showcase">
+  <div class="project-visual reveal-left">
+   <div class="project-window">
+    <div class="window-bar"><i></i><i></i><i></i></div>
+    <div class="window-content">
+     <div class="window-line"></div>
+     <div class="window-line short"></div>
+     <div class="window-blocks"><span></span><span></span><span></span></div>
+     <div class="window-line" style="width:60%;margin-top:22px"></div>
+    </div>
+   </div>
+  </div>
+
+  <div class="project-copy reveal-right">
+   <div class="eyebrow">MY DEVELOPER JOURNEY</div>
+   <h3>Learning to create digital worlds.</h3>
+   <p>
+    My goal is to grow as a website developer, understand how creative
+    websites are built and create projects that feel thoughtful,
+    useful and different.
+   </p>
+   <p>
+    This portfolio is one step in that journey.
+    Every design, animation and line of code teaches me something new.
+    I'm still learning, and I want to keep moving forward
+    with curiosity and consistency.
+   </p>
+   <span class="project-status"><span class="status-dot"></span> Learning · Building · Improving</span>
+  </div>
+ </div>
+
+ <div class="project-points">
+  <div class="project-point reveal">
+   <strong>DESIGN</strong>
+   <span>Exploring layouts, visual storytelling and creative interfaces.</span>
+  </div>
+  <div class="project-point reveal">
+   <strong>DEVELOP</strong>
+   <span>Learning the code and tools behind interactive websites.</span>
+  </div>
+  <div class="project-point reveal">
+   <strong>CREATE</strong>
+   <span>Turning ideas into real projects and improving with practice.</span>
+  </div>
+ </div>
+</section>
+
+<!-- LITTLE PAGE PROJECT -->
+<section class="little" id="little-page">
+ <div class="reveal">
+  <div class="eyebrow">A project in progress · My next chapter</div>
+  <h2>A LITTLE <span>PAGE.</span></h2>
+  <p>AN IDEA TAKING SHAPE · COMING SOON</p>
+  <p class="little-description">
+   Little Page is another website project I'm currently working on.
+   It's still in development, and I'm taking time to shape the idea,
+   improve the experience and bring it together properly.
+   There's more to come — this is just the beginning.
+  </p>
+  <div style="margin-top:30px">
+   <span class="project-status"><span class="status-dot"></span> Currently in development</span>
+  </div>
+ </div>
+</section>
+
+<!-- FUTURE -->
+<section class="future" id="future">
+ <div class="reveal">
+  <div class="eyebrow">06 / What comes next</div>
+  <h2 class="section-title">Still <em>becoming.</em></h2>
+  <p class="section-copy">
+   I don't have every answer today. I have ideas to explore,
+   skills to build, places to discover and dreams worth working for.
+  </p>
+  <div class="future-word">UNFINISHED</div>
+  <p class="eyebrow">THE BEST PART OF THE STORY IS STILL AHEAD.</p>
+ </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+ <div class="gallery-head reveal">
+  <div>
+   <div class="eyebrow">07 / Visual memories</div>
+   <h2 class="section-title">Life in<br><em>frames.</em></h2>
+  </div>
+  <p class="section-copy">
+   A few moments from my world.<br>
+   Real moments. Real memories. My perspective.
+  </p>
+ </div>
+
+ <div class="gallery-grid">
+  <div class="gallery-item reveal">
+   <img src="images/vamshi-2.jpg" alt="Vamshi photo two" loading="lazy">
+   <div class="gallery-label">01 — A moment in time</div>
+  </div>
+
+  <div class="gallery-item reveal">
+   <img src="images/vamshi-3.jpg" alt="Vamshi photo three" loading="lazy">
+   <div class="gallery-label">02 — My perspective</div>
+  </div>
+
+  <div class="gallery-item reveal">
+   <img src="images/vamshi-4.jpg" alt="Vamshi photo four" loading="lazy">
+   <div class="gallery-label">03 — Another chapter</div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+ <div class="footer-top">
+  <div>
+   <div class="eyebrow">The journey continues</div>
+   <div class="footer-title">
+    This is my world.<br><span>Thanks for visiting.</span>
+   </div>
+  </div>
+  <a class="social-link" href="https://www.instagram.com/x.mad_mr_rdr/" target="_blank" rel="noopener">
+   INSTAGRAM ↗ &nbsp; @x.mad_mr_rdr
+  </a>
+ </div>
+
+ <div class="footer-bottom">
+  <span>© 2026 VAMSHI — PERSONAL UNIVERSE</span>
+  <span>MADE OF DREAMS & CURIOSITY</span>
+ </div>
+</footer>
+
+<script>
+/* NAVIGATION */
+const navbar=document.getElementById('navbar');
+const progress=document.getElementById('progress');
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+
+menuBtn.addEventListener('click',()=>{
+ navLinks.classList.toggle('open');
+ menuBtn.textContent=navLinks.classList.contains('open')?'CLOSE ×':'MENU +';
+});
+
+navLinks.querySelectorAll('a').forEach(a=>{
+ a.addEventListener('click',()=>{
+  navLinks.classList.remove('open');
+  menuBtn.textContent='MENU +';
+ });
+});
+
+function updateScroll(){
+ const max=document.documentElement.scrollHeight-innerHeight;
+ progress.style.width=(max>0?scrollY/max*100:0)+'%';
+ navbar.classList.toggle('scrolled',scrollY>50);
+}
+addEventListener('scroll',updateScroll,{passive:true});
+updateScroll();
+
+/* SCROLL REVEAL */
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){
+   entry.target.classList.add('visible');
+   observer.unobserve(entry.target);
+  }
+ });
+},{threshold:.12});
+
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right')
+ .forEach(el=>observer.observe(el));
+
+/* CARD TILT */
+document.querySelectorAll('.interest-card,.gallery-item,.detail-card,.dream-card')
+.forEach(card=>{
+ card.addEventListener('pointermove',e=>{
+  if(innerWidth<700)return;
+  const r=card.getBoundingClientRect();
+  const x=(e.clientX-r.left)/r.width-.5;
+  const y=(e.clientY-r.top)/r.height-.5;
+  card.style.transform=
+   `perspective(900px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-5px)`;
+ });
+ card.addEventListener('pointerleave',()=>card.style.transform='');
+});
+
+/* THREE.JS BACKGROUND */
+(async function(){
+ const canvas=document.getElementById('universe');
+ try{
+  const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js');
+
+  const scene=new THREE.Scene();
+  scene.fog=new THREE.FogExp2(0x05070d,.035);
+
+  const camera=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,100);
+  camera.position.set(0,0,10);
+
+  const renderer=new THREE.WebGLRenderer({
+   canvas,alpha:true,antialias:true,
+   powerPreference:'high-performance'
+  });
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));
+  renderer.setSize(innerWidth,innerHeight);
+  renderer.setClearColor(0x000000,0);
+
+  scene.add(new THREE.AmbientLight(0x9caeff,.8));
+
+  const light1=new THREE.PointLight(0x8cecff,35,30);
+  light1.position.set(4,3,4);
+  scene.add(light1);
+
+  const light2=new THREE.PointLight(0x8866ff,30,30);
+  light2.position.set(-4,-3,-3);
+  scene.add(light2);
+
+  /* STAR FIELD */
+  const starCount=2600;
+  const starPositions=new Float32Array(starCount*3);
+
+  for(let i=0;i<starCount;i++){
+   starPositions[i*3]=(Math.random()-.5)*65;
+   starPositions[i*3+1]=(Math.random()-.5)*45;
+   starPositions[i*3+2]=(Math.random()-.5)*45;
+  }
+
+  const starGeometry=new THREE.BufferGeometry();
+  starGeometry.setAttribute(
+   'position',new THREE.BufferAttribute(starPositions,3)
+  );
+
+  const stars=new THREE.Points(
+   starGeometry,
+   new THREE.PointsMaterial({
+    color:0xb9d8ff,size:.035,transparent:true,
+    opacity:.85,sizeAttenuation:true,depthWrite:false
+   })
+  );
+  scene.add(stars);
+
+  /* CENTRAL 3D OBJECT */
+  const coreGroup=new THREE.Group();
+  scene.add(coreGroup);
+
+  const core=new THREE.Mesh(
+   new THREE.IcosahedronGeometry(1.35,4),
+   new THREE.MeshPhysicalMaterial({
+    color:0x7d91e8,metalness:.65,roughness:.19,
+    transmission:.15,transparent:true,opacity:.9,
+    emissive:0x282060,emissiveIntensity:.45
+   })
+  );
+  coreGroup.add(core);
+
+  const wire=new THREE.Mesh(
+   new THREE.IcosahedronGeometry(1.53,2),
+   new THREE.MeshBasicMaterial({
+    color:0x9deeff,wireframe:true,
+    transparent:true,opacity:.22
+   })
+  );
+  coreGroup.add(wire);
+
+  /* ORBIT RINGS */
+  const ringGroup=new THREE.Group();
+  coreGroup.add(ringGroup);
+
+  for(let i=0;i<3;i++){
+   const ring=new THREE.Mesh(
+    new THREE.TorusGeometry(2.05+i*.28,.006,8,180),
+    new THREE.MeshBasicMaterial({
+     color:i===1?0x9f86ff:0x8cecff,
+     transparent:true,opacity:.6-i*.12
+    })
+   );
+   ring.rotation.x=Math.PI/2+i*.55;
+   ring.rotation.y=i*.7;
+   ringGroup.add(ring);
+  }
+
+  /* ORBITING OBJECTS */
+  const orbiters=[];
+  const orbColors=[0x8cecff,0xa58bff,0xffffff,0x6d9fff];
+
+  for(let i=0;i<12;i++){
+   const mesh=new THREE.Mesh(
+    new THREE.SphereGeometry(.035+Math.random()*.055,16,16),
+    new THREE.MeshBasicMaterial({color:orbColors[i%4]})
+   );
+   scene.add(mesh);
+   orbiters.push({
+    mesh,
+    angle:i/12*Math.PI*2,
+    radius:2.5+Math.random()*1.3,
+    speed:.15+Math.random()*.25,
+    height:(Math.random()-.5)*1.5
+   });
+  }
+
+  /* FLOATING GEOMETRY */
+  const shapes=[];
+  const geometries=[
+   new THREE.OctahedronGeometry(.32,1),
+   new THREE.TorusKnotGeometry(.22,.07,90,10),
+   new THREE.TetrahedronGeometry(.35,1)
+  ];
+
+  for(let i=0;i<15;i++){
+   const object=new THREE.Mesh(
+    geometries[i%3],
+    new THREE.MeshStandardMaterial({
+     color:i%2?0x8cecff:0xa58bff,
+     metalness:.8,roughness:.25,
+     wireframe:i%3===0,transparent:true,opacity:.48
+    })
+   );
+
+   object.position.set(
+    (Math.random()-.5)*17,
+    (Math.random()-.5)*12,
+    -2-Math.random()*10
+   );
+   object.userData={speed:.002+Math.random()*.006};
+   scene.add(object);
+   shapes.push(object);
+  }
+
+  let targetX=0,targetY=0,pointerX=0,pointerY=0;
+  let scrollProgress=0;
+
+  addEventListener('pointermove',e=>{
+   targetX=(e.clientX/innerWidth-.5)*2;
+   targetY=(e.clientY/innerHeight-.5)*2;
+  },{passive:true});
+
+  addEventListener('scroll',()=>{
+   const max=document.documentElement.scrollHeight-innerHeight;
+   scrollProgress=max>0?scrollY/max:0;
+  },{passive:true});
+
+  const clock=new THREE.Clock();
+
+  function animate(){
+   requestAnimationFrame(animate);
+   const t=clock.getElapsedTime();
+
+   pointerX+=(targetX-pointerX)*.035;
+   pointerY+=(targetY-pointerY)*.035;
+
+   coreGroup.rotation.y=t*.12+pointerX*.16;
+   coreGroup.rotation.x=Math.sin(t*.2)*.12+pointerY*.12;
+   coreGroup.position.y=Math.sin(t*.45)*.16;
+
+   core.scale.setScalar(1+Math.sin(t*.8)*.025);
+   wire.rotation.x=-t*.08;
+   wire.rotation.y=t*.12;
+   ringGroup.rotation.z=t*.09;
+
+   stars.rotation.y=t*.006+pointerX*.015;
+   stars.rotation.x=pointerY*.012;
+
+   orbiters.forEach(o=>{
+    o.angle+=o.speed*.006;
+    o.mesh.position.set(
+     Math.cos(o.angle)*o.radius,
+     Math.sin(o.angle*1.5)*.45+o.height,
+     Math.sin(o.angle)*o.radius-1
+    );
+   });
+
+   shapes.forEach((s,i)=>{
+    s.rotation.x+=s.userData.speed;
+    s.rotation.y+=s.userData.speed*.7;
+    s.position.y+=Math.sin(t*.35+i)*.0008;
+   });
+
+   camera.position.x=pointerX*.35;
+   camera.position.y=-pointerY*.25+scrollProgress*.5;
+   camera.position.z=10-scrollProgress*1.2;
+   camera.lookAt(0,0,0);
+
+   light1.position.x=4+pointerX*2;
+   light2.position.y=-3+pointerY*2;
+
+   renderer.render(scene,camera);
+  }
+
+  animate();
+
+  addEventListener('resize',()=>{
+   camera.aspect=innerWidth/innerHeight;
+   camera.updateProjectionMatrix();
+   renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));
+   renderer.setSize(innerWidth,innerHeight);
+  });
+
+ }catch(error){
+  console.warn('3D background could not load. Check internet connection.',error);
+  canvas.style.display='none';
+ }
+})();
+</script>
+</body>
+</html>
