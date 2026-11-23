@@ -1,4 +1,4 @@
-# VAMSHI — My World, My Story
+# VAMSHI — 
 
 A responsive, premium dark-themed personal portfolio built with HTML, CSS and JavaScript. It can be hosted free on GitHub Pages and does not require a build step.
 
